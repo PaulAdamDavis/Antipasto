@@ -236,3 +236,8 @@ html,
         font-size: 1.6rem;
     }
 }
+
+.tf-podcast-player-vox {
+    padding: 1em 1.5em;
+    background: rgba(175, 175, 175, 0.3);
+}

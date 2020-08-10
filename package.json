@@ -1,8 +1,7 @@
 {
-    "name": "ghost-starter-theme",
-    "description": "A custom theme for ghost",
-    "demo": "https://starter.ghost.io",
-    "version": "1.0.0",
+    "name": "antipasto",
+    "description": "A fork of the starter theme for ghost",
+    "version": "1.0.1",
     "engines": {
         "ghost": ">=3.0.0",
         "ghost-api": "v3"
