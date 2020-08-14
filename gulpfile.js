@@ -5,6 +5,7 @@ const pump = require('pump');
 var livereload = require('gulp-livereload');
 var postcss = require('gulp-postcss');
 var zip = require('gulp-zip');
+var babel = require('gulp-babel');
 var uglify = require('gulp-uglify');
 var beeper = require('beeper');
 
@@ -54,6 +55,9 @@ function css(done) {
 function js(done) {
     pump([
         src('assets/js/*.js', {sourcemaps: true}),
+        babel({
+            presets: ['@babel/env']
+        }),
         uglify(),
         dest('assets/built/', {sourcemaps: '.'}),
         livereload()

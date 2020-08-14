@@ -43,10 +43,13 @@
     "bugs": "https://github.com/TryGhost/Starter/issues",
     "contributors": "https://github.com/TryGhost/Starter/graphs/contributors",
     "devDependencies": {
+        "@babel/core": "^7.11.1",
+        "@babel/preset-env": "^7.11.0",
         "autoprefixer": "9.8.3",
         "cssnano": "4.1.10",
         "gscan": "3.5.4",
         "gulp": "4.0.2",
+        "gulp-babel": "^8.0.0",
         "gulp-livereload": "4.0.2",
         "gulp-postcss": "8.0.0",
         "gulp-sourcemaps": "2.6.5",
