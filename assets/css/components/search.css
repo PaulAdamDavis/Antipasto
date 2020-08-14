@@ -1,0 +1,108 @@
+.gh-search-icon {
+    cursor: pointer;
+}
+
+.gh-modal-backdrop {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 9999;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(84,102,109,.5);
+}
+
+.gh-search-open .gh-modal-backdrop {
+    display: flex;
+}
+
+.gh-search-modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0 4vmin;
+    max-width: 100%;
+    width: 100%;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0,0,0,.03), 0 10px 32px -5px rgba(0,0,0,.1);
+}
+
+.gh-search-open .gh-search-modal {
+    display: block;
+}
+
+.gh-modal-content {
+    padding: 0 0 8vmin;
+}
+
+.gh-modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6vmin 0;
+    margin: 0 0 6vmin;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.gh-search-input {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    margin-right: 5vmin;
+}
+
+.gh-search-input span {
+    margin: 0 3vmin 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.gh-search-input span svg {
+    height: 24px;
+    width: auto;
+}
+
+.gh-search-input input {
+    height: 6.5rem;
+    padding: 0;
+    font-size: 3.6rem;
+    font-family: var(--font-sans-serif);
+    font-weight: 800;
+    line-height: 1.55em;
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.gh-search-close {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+}
+
+.gh-search-close svg {
+    fill: currentcolor;
+    height: 24px;
+    width: auto;
+}
+
+.gh-search-results .gh-search-item:nth-child(n+2) {
+    margin-top: 60px;
+}

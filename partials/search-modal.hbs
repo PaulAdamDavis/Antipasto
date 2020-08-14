@@ -1,0 +1,26 @@
+<div id="search-modal" class="gh-modal-backdrop">
+    <div class="gh-modal gh-search-modal">
+        <div class="gh-modal-content gh-container">
+            <div class="gh-modal-head">
+                <form class="gh-search-input">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <title>search</title>
+                            <path d="M23.5 24c-.134 0-.259-.052-.354-.146l-5.589-5.589C15.617 20.031 13.121 21 10.5 21 4.71 21 0 16.29 0 10.5S4.71 0 10.5 0 21 4.71 21 10.5c0 2.621-.969 5.117-2.736 7.057l5.589 5.589c.095.095.147.22.147.354s-.052.259-.146.354-.22.146-.354.146zm-13-23C5.262 1 1 5.262 1 10.5S5.262 20 10.5 20s9.5-4.262 9.5-9.5S15.738 1 10.5 1z"/>
+                        </svg>
+                    </span>
+                    <label class="hidden" for="search">Search</label>
+                    <input id="search-input" type=text placeholder="Search everything" autocomplete="off" autofocus="true" onfocus="this.value = ''" name="search" aria-label="Search" />
+                </form>
+                <div id="search-close" class="gh-search-close" role="button" aria-label="Close Search">
+                    <svg version="1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12.707 12L23.854.854a.5.5 0 0 0-.707-.707L12 11.293.854.146a.5.5 0 0 0-.707.707L11.293 12 .146 23.146a.5.5 0 0 0 .708.708L12 12.707l11.146 11.146a.5.5 0 1 0 .708-.706L12.707 12z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="gh-modal-body">
+                <div id="hits"></div>
+            </div>
+        </div>
+    </div>
+</div>

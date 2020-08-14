@@ -195,3 +195,15 @@ h6 {
         scroll-behavior: auto !important;
     }
 }
+
+/* Hide elements in an accessible 'visually hidden way */
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}

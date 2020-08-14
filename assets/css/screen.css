@@ -13,6 +13,7 @@ production stylesheet in assets/built/screen.css using: gulp dev
 @import "components/global.css";
 @import "components/forms.css";
 @import "components/buttons.css";
+@import "components/search.css";
 
 /* Ghost components */
 @import "ghost/header.css";
@@ -236,6 +237,10 @@ html,
         font-size: 1.6rem;
     }
 }
+
+
+/* Podcast player wrapper
+/* ---------------------------------------------------------- */
 
 .tf-podcast-player-vox {
     padding: 1em 1.5em;
